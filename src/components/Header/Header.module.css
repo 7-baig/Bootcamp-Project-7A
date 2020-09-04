@@ -1,11 +1,39 @@
 .container {
-    border: 1px solid black;
     width: 30%;
 }
 .cardsContainer {
-    border: 1px solid black;
     display: flex;
+    justify-content: center;
+}
+.title {
+    margin: 10px 0px;
+}
+.balance {
+    margin: 10px 0px;
+    font-weight: 200;
+}
+.totalAmount {
+    margin: 10px 0px;
+}
+.cardsContainer {
+    margin: 10px 0px;
 }
 .cardsContainer div {
-    padding: 15px 30px;
+    padding: 20px 40px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    box-shadow: 0px 1px 5px rgb(180, 180, 180);
+}
+.cardsContainer div h4 {
+    margin: 5px 0px;
+}
+.incomeCard h4:nth-child(2) {
+    color: green;
+}
+.expenseCard h4:nth-child(2) {
+    color: red;
 }

@@ -4,8 +4,8 @@ import styles from './AddTransaction.module.css'
 
 export const AddTransaction: React.FC = () => {
 
-    const [textValue, setTextValue] = useState<string>('')
-    const [amountValue, setAmountValue] = useState<number>(0)
+    const [textValue, setTextValue] = useState<string>('Headphones')
+    const [amountValue, setAmountValue] = useState<number>(30)
 
     const [value, setValue] = useContext<any>(Store)
 
@@ -16,6 +16,8 @@ export const AddTransaction: React.FC = () => {
             amount: amountValue,
         }
         setValue([...value, item])
+        setTextValue('')
+        setAmountValue(0)
     }
 
     return (

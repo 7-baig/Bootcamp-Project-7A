@@ -1,6 +1,31 @@
 .container {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     width: 30%;
+}
+.container h4 {
+    margin: 10px 0px;
+}
+.item {
+    margin: 5px 0px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    display: flex;
+}
+.text {
+    flex-grow: 1;
+}
+.amount {
+    margin: 0px 5px;
+}
+.item button {
+    margin: 0px 5px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.item button i {
+    color: gray;
+    font-size: 1.2rem;
 }

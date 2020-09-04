@@ -8,18 +8,25 @@ export const History: React.FC = () => {
 
     return (
         <div className={styles.container}>
-            <h5>History</h5>
+            <h4>History</h4>
             <hr />
             {
                 value.map((item:any) => (
-                    <>
-                    <h1>{item.text}</h1>
-                    <h1>{item.amount}</h1>
-                    <button onClick={() => setValue(value.filter((e:any) => e.id !== item.id))}>delete</button>
-                    </>
+                    <div 
+                        key={item.id} 
+                        className={styles.item}
+                        style={ item.amount < 0 ? { backgroundColor: 'rgb(255, 199, 199)' } : { backgroundColor: 'rgb(199, 255, 199)' } }
+                    >
+                        <h4 className={styles.text}>{item.text}</h4>
+                        <h4 className={styles.amount}>${item.amount}</h4>
+                        <button 
+                            onClick={() => setValue(value.filter((e:any) => e.id !== item.id))}
+                        >
+                            <i className="fas fa-trash"></i>
+                        </button>
+                    </div>
                 ))
             }
         </div>
     )
-
 }
