@@ -1,0 +1,11 @@
+.container {
+    border: 1px solid black;
+    width: 30%;
+}
+.cardsContainer {
+    border: 1px solid black;
+    display: flex;
+}
+.cardsContainer div {
+    padding: 15px 30px;
+}
