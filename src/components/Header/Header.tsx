@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { Store } from '../../context/Context'
+import logo from '../../assets/logo.png'
 import styles from './Header.module.css'
 
 export const Header: React.FC = () => {
@@ -23,12 +24,19 @@ export const Header: React.FC = () => {
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>Expense Tracker PWA</h1>
+            <div className={styles.title}>
+                <img src={logo} alt="logo" />
+                <h1>Expense Tracker PWA</h1>
+            </div>
             <hr />
             <h2 className={styles.balance}>Your Balance</h2>
             <h1
                 className={styles.totalAmount}
-                style={total < 0 ? { color: 'red' } : { color: 'green' }}
+                style={total < 0 
+                ? 
+                { color: 'var(--expense-text-color)' } 
+                : 
+                { color: 'var(--income-text-color)' }}
             >${total}</h1>
             <div className={styles.cardsContainer}>
                 <div className={styles.incomeCard}>

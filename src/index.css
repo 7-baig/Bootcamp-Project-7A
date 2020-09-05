@@ -5,10 +5,10 @@
 }
 :root {
   --primary-text-color: #333333;
-  --income-text-color: green;
-  --expense-text-color: red;
+  --income-text-color: #2ECC71;
+  --expense-text-color: #E74C3C;
   --primary-width: 30%;
-  --primary-min-width: 350px;
+  --primary-min-width: 400px;
 }
 html, 
 body {
