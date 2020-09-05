@@ -1,0 +1,14 @@
+.container {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container img {
+    width: 30px;
+}
+@media screen and (max-width: 480px) {
+ .container img {
+    width: 20px;
+}   
+}
