@@ -4,8 +4,8 @@ import styles from './AddTransaction.module.css'
 
 export const AddTransaction: React.FC = () => {
 
-    const [textValue, setTextValue] = useState<string>('Headphones')
-    const [amountValue, setAmountValue] = useState<number>(30)
+    const [textValue, setTextValue] = useState<string>('')
+    const [amountValue, setAmountValue] = useState<number>()
 
     const [value, setValue] = useContext<any>(Store)
 
@@ -22,21 +22,23 @@ export const AddTransaction: React.FC = () => {
 
     return (
         <div className={styles.container}>
-            <h5>Add New Transaction</h5>
+            <h4>Add New Transaction</h4>
             <hr />
             <div className={styles.form}>
-                <h6>Text</h6>
+                <h4>Text</h4>
                 <input 
                     type="text" 
                     name="textValue" 
                     value={textValue} 
+                    placeholder="Headphones"
                     onChange={(ev: React.ChangeEvent<HTMLInputElement>,): void => setTextValue(ev.target.value)} 
                 />
-                <h6>Amount</h6>
+                <h4>Amount<span>(-expense, +income)</span></h4>
                 <input
                     type="number" 
                     name="amountValue" 
                     value={amountValue} 
+                    placeholder="$15"
                     onChange={(ev: React.ChangeEvent<HTMLInputElement>,): void => setAmountValue(parseInt(ev.target.value, 10))}
                 />
                 <button

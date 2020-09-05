@@ -3,3 +3,51 @@
     flex-direction: column;
     width: 30%;
 }
+.container h4 {
+    margin: 10px 0px;
+}
+.form {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.form h4 {
+    margin: 8px 0px;
+    font-weight: 200;
+}
+.form h4 span {
+    margin: 0px 10px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.486);
+}
+.form input {
+    padding: 10px 80px 10px 10px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+    outline: none;
+}
+/* Chrome, Safari, Edge, Opera */
+.form input::-webkit-outer-spin-button,
+.form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.form input[type=number] {
+  -moz-appearance: textfield;
+}
+.form button {
+    margin: 20px 0px;
+    padding: 15px 30px;
+    align-self: flex-start;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+    box-shadow: 2px 2px 5px rgb(194, 194, 194);
+}
+.form button:hover {
+    background-color: rgba(0, 0, 0, 0.089);
+    box-shadow: none;
+}
