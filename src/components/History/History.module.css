@@ -1,7 +1,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: var(--primary-width);
+    min-width: var(--primary-min-width);
+    color: var(--primary-text-color);
 }
 .container p {
     margin: 10px 0px;
@@ -14,6 +16,7 @@
     padding: 5px 10px;
     border-radius: 5px;
     display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.082);
 }
 .text {
     flex-grow: 1;
@@ -32,4 +35,8 @@
 .item button i {
     color: gray;
     font-size: 1.2rem;
+}
+.item button i:hover {
+    color: red;
+    transform: scale(1.2, 1.2);
 }

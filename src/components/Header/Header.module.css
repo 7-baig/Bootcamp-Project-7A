@@ -1,5 +1,7 @@
 .container {
-    width: 30%;
+    width: var(--primary-width);
+    min-width: var(--primary-min-width);
+    color: var(--primary-text-color);
 }
 .cardsContainer {
     display: flex;
@@ -32,8 +34,8 @@
     margin: 5px 0px;
 }
 .incomeCard h4:nth-child(2) {
-    color: green;
+    color: var(--income-text-color);
 }
 .expenseCard h4:nth-child(2) {
-    color: red;
+    color: var(--expense-text-color);
 }

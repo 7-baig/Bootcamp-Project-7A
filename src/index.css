@@ -3,8 +3,35 @@
   padding: 0%;
   box-sizing: border-box;
 }
+:root {
+  --primary-text-color: #333333;
+  --income-text-color: green;
+  --expense-text-color: red;
+  --primary-width: 30%;
+  --primary-min-width: 350px;
+}
 html, 
 body {
-  font-family: sans-serif;
   font-size: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+@media screen and (max-width: 480px) {
+  html, 
+  body {
+    font-size: 90%;
+  }  
+  :root {
+    --primary-width: 30%;
+    --primary-min-width: 300px;
+  }
+}
+@media screen and (max-width: 320px) {
+  html, 
+  body {
+    font-size: 85%;
+  }  
+  :root {
+    --primary-width: 30%;
+    --primary-min-width: 260px;
+  }
 }

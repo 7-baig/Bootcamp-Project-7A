@@ -1,7 +1,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: var(--primary-width);
+    min-width: var(--primary-min-width);
+    color: var(--primary-text-color);
 }
 .container h4 {
     margin: 10px 0px;
@@ -38,9 +40,9 @@
   -moz-appearance: textfield;
 }
 .form button {
+    align-self: flex-start;
     margin: 20px 0px;
     padding: 15px 30px;
-    align-self: flex-start;
     outline: none;
     cursor: pointer;
     border: none;
@@ -50,4 +52,10 @@
 .form button:hover {
     background-color: rgba(0, 0, 0, 0.089);
     box-shadow: none;
+}
+
+@media screen and (max-width: 480px) {
+    .form button {
+        align-self: center;
+    }
 }
