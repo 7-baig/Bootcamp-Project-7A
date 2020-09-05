@@ -11,6 +11,8 @@ export const History: React.FC = () => {
             <h4>History</h4>
             <hr />
             {
+                value.length !== 0 
+                ?
                 value.map((item:any) => (
                     <div 
                         key={item.id} 
@@ -26,6 +28,8 @@ export const History: React.FC = () => {
                         </button>
                     </div>
                 ))
+                :
+                <p>No items</p>
             }
         </div>
     )

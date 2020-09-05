@@ -3,6 +3,9 @@
     flex-direction: column;
     width: 30%;
 }
+.container p {
+    margin: 10px 0px;
+}
 .container h4 {
     margin: 10px 0px;
 }
